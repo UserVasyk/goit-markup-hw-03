@@ -96,6 +96,7 @@ body {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: 0.06em;
 }
 .hero-button {
   color: var(--primary-bg-color);
@@ -235,15 +236,11 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.feature-list {
-  display: flex;
-  gap: 30px;
-}
 img {
   display: block;
 }
 .feature-list .item {
-  width: 270px;
+  width: calc((100% - 90px) / 4);
 }
 .feature-list .item:last-child {
   margin-right: 0;
@@ -255,11 +252,6 @@ img {
 .filter-button {
   border-radius: 4px;
   padding: 6px 22px;
-}
-.portfolio-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
 }
 
 .container-portfolio {
@@ -285,10 +277,6 @@ img {
 }
 .feature {
   padding-bottom: 0;
-}
-.list-retreat {
-  display: flex;
-  gap: 30px;
 }
 
 .container-team {
@@ -318,4 +306,18 @@ img {
 
 .header-list-info {
   margin-left: auto;
+}
+.card-set {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.list-about .item {
+  width: calc((100% - 60px) / 3);
+}
+.list-team .item {
+  width: calc((100% - 90px) / 4);
+}
+.portfolio-list .portfolio-item {
+  width: calc((100% - 60px) / 3);
 }
